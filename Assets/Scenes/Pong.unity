@@ -526,6 +526,7 @@ GameObject:
   - component: {fileID: 882351761}
   - component: {fileID: 882351764}
   - component: {fileID: 882351763}
+  - component: {fileID: 882351765}
   m_Layer: 0
   m_Name: Player Paddle
   m_TagString: Untagged
@@ -646,7 +647,20 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 1
+  m_Constraints: 5
+--- !u!114 &882351765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882351760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 801add58e26f34a4ba34540d2b3abba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 10
 --- !u!1 &1314227892
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,7 +915,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 1
+  m_Constraints: 5
 --- !u!212 &1978290966
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -1,18 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerPaddle : MonoBehaviour
+public class PlayerPaddle : Paddle
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private Vector2 _direction;
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (Input.GetKey(KeyCode.W))
+        {
+            _direction = Vector2.up;
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            _direction = Vector2.down;
+        }
+        else
+        {
+            _direction = Vector2.zero;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (_direction.sqrMagnitude != 0)
+        {
+            _rigidbody.AddForce(_direction * _speed);
+        }
     }
 }
