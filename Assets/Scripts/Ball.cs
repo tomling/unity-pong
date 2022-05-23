@@ -4,7 +4,7 @@ public class Ball : MonoBehaviour
 {
     private Rigidbody2D _rigidbody;
 
-    public float _speed = 200.0f;
+    public float Speed = 200.0f;
 
     void Awake()
     {
@@ -21,9 +21,9 @@ public class Ball : MonoBehaviour
         var x = Random.value < 0.5f ? -1.0f : 1.0f;
         var y = Random.value < 0.5f ? Random.Range(-1.0f, -0.5f) : Random.Range(0.5f, 1f);
 
-        var Direction = new Vector2(x, y);
+        var direction = new Vector2(x, y);
 
-        _rigidbody.AddForce(Direction * _speed);
+        _rigidbody.AddForce(direction * Speed);
     }
 
 }

@@ -25,7 +25,7 @@ public class PlayerPaddle : Paddle
     {
         if (_direction.sqrMagnitude != 0)
         {
-            _rigidbody.AddForce(_direction * _speed);
+            Rigidbody.AddForce(_direction * Speed);
         }
     }
 }

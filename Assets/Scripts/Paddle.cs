@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class Paddle : MonoBehaviour
 {
-    public float _speed = 10.0f;
+    public float Speed = 10.0f;
 
-    protected Rigidbody2D _rigidbody;
+    protected Rigidbody2D Rigidbody;
 
     private void Awake()
     {
-        _rigidbody = GetComponent<Rigidbody2D>();
+        Rigidbody = GetComponent<Rigidbody2D>();
     }
 
 }
