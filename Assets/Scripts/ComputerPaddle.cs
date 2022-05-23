@@ -16,6 +16,18 @@ public class ComputerPaddle : Paddle
                 MoveDown();
             }
         }
+        else
+        {
+            if (transform.position.y > 0.0f)
+            {
+                MoveDown();
+            }
+            else if (transform.position.y < 0.0f)
+            {
+                MoveUp();
+            }
+
+        }
     }
 
     private void MoveDown()
