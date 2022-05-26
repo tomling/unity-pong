@@ -399,7 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d43911059b4127439e6cc91ee224b8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounceStrength: 10
+  bounceStrength: 5
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,7 +905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d43911059b4127439e6cc91ee224b8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounceStrength: 10
+  bounceStrength: 5
 --- !u!1 &1978290963
 GameObject:
   m_ObjectHideFlags: 0
